@@ -3,7 +3,40 @@ html {
   font-family: Helvetica sans-serif;
   line-height: 1.4;
 }
+
+@media only screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+
 /* Nav Banner */
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
 header {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-size: cover;
@@ -25,6 +58,7 @@ nav {
 }
 
 .container {
+  display: flex;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -43,6 +77,22 @@ nav div {
   display: flex;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
 
 nav ul {
   display: flex;
@@ -62,6 +112,20 @@ li {
 /* End Nav Banner */
 /* Quote Banner */
 
+@media only screen and (max-width: 1024px) {
+  .quote container {
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
 header .quote {
   justify-content: flex-end;
 }
@@ -80,6 +144,12 @@ header .quote {
   padding: 2rem 5rem;
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .concept-statement h1 {
+    font-size: 1.33rem;
+  }
 }
 
 /* End Quote Banner */
