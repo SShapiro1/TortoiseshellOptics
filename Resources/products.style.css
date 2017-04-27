@@ -1,0 +1,12 @@
+body {
+  background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/314790_10100507165463367_164132334_n.jpg?oh=325108b5b37d345a9ac16e0fc64a2ce1&oe=5991F2CB");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 72px;
+  text-align: center;
+}
