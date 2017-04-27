@@ -3,36 +3,19 @@ html {
   font-family: Helvetica sans-serif;
   line-height: 1.4;
 }
-
-@media only screen and (max-width: 1024px) {
-  body {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-
-
 /* Nav Banner */
 
 @media only screen and (max-width: 1024px) {
-  header {
+   header {
     height: 22rem;
-    background-size: cover;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  header {
-    font-size: 16px;
+    padding-top: 0 !important;
   }
 }
 
 
 @media only screen and (max-width: 1024px) {
   .container {
-    width: 100%;
-    padding: 0;
+    max-width: 100%;
   }
 }
 
@@ -77,22 +60,6 @@ nav div {
   display: flex;
 }
 
-.mobile-nav {
-  display: none;
-}
-
-@media only screen and (max-width: 470px) {
-  nav ul {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .mobile-nav {
-    display: block;
-    text-align: center;
-  }
-}
 
 nav ul {
   display: flex;
@@ -120,11 +87,13 @@ li {
   }
 }
 
+
 @media only screen and (max-width: 1024px) {
-  h1 {
-    font-size: 1.33rem;
+  .concept-statement {
+
   }
 }
+
 
 header .quote {
   justify-content: flex-end;
