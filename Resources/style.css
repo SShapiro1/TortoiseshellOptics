@@ -1,23 +1,17 @@
 html {
   font-size: 18px;
-  font-family: Helvetica sans-serif;
+  font-family: Helvetica, sans-serif;
   line-height: 1.4;
 }
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+
 /* Nav Banner */
 
-@media only screen and (max-width: 1024px) {
-   header {
-    height: 22rem;
-    padding-top: 0 !important;
-  }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  .container {
-    max-width: 100%;
-  }
-}
 
 
 header {
@@ -27,6 +21,25 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+    max-width: 100%;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  header {
+    padding-top: 0;
+    height: 17rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 3;
+  }
 }
 
 nav {
@@ -40,10 +53,30 @@ nav {
   margin: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .container {
   display: flex;
   max-width: 960px;
-  margin: 0 auto;
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+.container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .container {
+    max-width: 100%;
+    flex-shrink: 3;
+  }
 }
 
 nav img {
@@ -64,7 +97,10 @@ nav div {
 nav ul {
   display: flex;
   flex-direction: row;
+}
 
+.mobile-nav {
+  display: none;
 }
 
 ul {
@@ -76,27 +112,15 @@ li {
   padding: 1rem 2rem;
 
 }
+
+
 /* End Nav Banner */
 /* Quote Banner */
-
-@media only screen and (max-width: 1024px) {
-  .quote container {
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding: 0.75rem 4rem;
-  }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  .concept-statement {
-
-  }
-}
 
 
 header .quote {
   justify-content: flex-end;
+
 }
 
 .quote {
@@ -105,19 +129,38 @@ header .quote {
 
 .concept-statement {
   background-color: white;
-  position: relative;
-  top: 10rem;
-  right: 2rem;
-  left: 3rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  max-width: 1000px;
   display: inline-block;
-  padding: 2rem 5rem;
+
+}
+
+h1 {
   font-size: 2rem;
   font-weight: bold;
+  margin: .67em 0;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .concept-statement {
+    margin-top: 5rem;
+    margin-right: 2rem;
+
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-  .concept-statement h1 {
+  h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right:4rem;
+    padding-left: 4rem;
     font-size: 1.33rem;
+    font-weight: bold;
   }
 }
 
