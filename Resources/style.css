@@ -36,9 +36,8 @@ header {
   header {
     padding-top: 0;
     height: 17rem;
-    max-width: 100%;
-    overflow: hidden;
-    flex-shrink: 3;
+    background-position: 20%;
+    background-size: cover;
   }
 }
 
@@ -53,16 +52,22 @@ nav {
   margin: auto;
 }
 
-@media only screen and (max-width: 1024px) {
-  .container {
-    width: 100%;
+@media only screen and (max-width: 470px) {
+  li {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile-nav {
+    color: white;
+    display: block;
   }
 }
 
 .container {
   display: flex;
   max-width: 960px;
-
 }
 
 
@@ -75,7 +80,6 @@ nav {
 @media only screen and (max-width:470px) {
   .container {
     max-width: 100%;
-    flex-shrink: 3;
   }
 }
 
@@ -150,7 +154,17 @@ h1 {
   .concept-statement {
     margin-top: 5rem;
     margin-right: 2rem;
+  }
+}
 
+@media only screen and (max-width: 470px) {
+  .concept-statement {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border: 1px solid red;
+    margin-top: 9rem 0 0 auto;
+    text-align: center;
   }
 }
 
@@ -165,6 +179,15 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 470px) {
+  h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    align-content: center;
+  }
+}
 /* End Quote Banner */
 
 .services {
@@ -181,6 +204,18 @@ h1 {
   justify-content: center;
 }
 
+@media only screen and (max-width: 470px) {
+  #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-top: 3.77rem;
+  }
+}
+
 .service {
   display: flex;
   flex-direction: column;
@@ -192,6 +227,12 @@ h1 {
   align-items: center;
 }
 
+
+@media only screen and (max-width: 470px) {
+  .service {
+    margin-top: 1.54rem;
+  }
+}
 
 .description {
   display: block;
@@ -223,8 +264,15 @@ img {
 .values {
   width: 35%;
   margin: 5%;
-
 }
+
+@media only screen and (max-width: 470px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .contact {
   background-color: cadetblue;
   width: 10rem;
@@ -233,6 +281,11 @@ img {
   max-width: 10rem;
   padding: 0.5rem 1.25rem;
   color: white;
+}
+@media only screen and (max-width: 470px) {
+  .values {
+    display: block;
+  }
 }
 
 .info p {
