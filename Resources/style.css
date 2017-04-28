@@ -125,13 +125,14 @@ header .quote {
 
 .quote {
   display: flex;
+  margin: auto;
 }
+
 
 .concept-statement {
   background-color: white;
   margin-top: 10rem;
   margin-right: -2rem;
-  max-width: 1000px;
   display: inline-block;
 
 }
