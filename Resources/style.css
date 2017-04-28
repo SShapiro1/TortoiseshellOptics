@@ -210,35 +210,28 @@ img {
 /* End Services Images */
 /* Begin Philosophy & Contact Info */
 
-#contact {
+#contacts .services-container {
   display: flex;
   justify-content: center;
 }
 
 .services-container {
   display: flex;
-  width: 50%;
-  margin: auto;
-  align-items: flex-start;
   justify-content: space-between;
 }
 
 .values {
-  display: block;
   width: 35%;
   margin: 5%;
 
 }
 .contact {
-  display: flex;
   background-color: cadetblue;
   width: 10rem;
-  font-family: Helvetica;
   font-weight: bold;
   font-size: 1rem;
   max-width: 10rem;
-  padding: 1rem;
-  margin: auto;
+  padding: 0.5rem 1.25rem;
   color: white;
 }
 
