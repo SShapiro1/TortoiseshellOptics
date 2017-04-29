@@ -31,7 +31,7 @@ header {
     background-size: cover;
 }
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width: 470px) {
   header {
     padding-top: 0;
     height: 17rem;
@@ -44,12 +44,10 @@ header {
 nav {
   padding: 1rem 0;
   display: flex;
-  width: 960px;
   background-color: cadetblue;
   color: white;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
 }
 
 @media only screen and (max-width: 470px) {
@@ -64,21 +62,17 @@ nav {
   }
 }
 
-
 @media only screen and (max-width: 470px) {
   nav span {
     display: none;
   }
 }
 
-
 @media only screen and (max-width: 470px) {
   nav .items {
     max-width: 100%;
   }
 }
-
-
 
 @media only screen and (max-width: 470px) {
   nav .mobile-nav {
@@ -94,13 +88,13 @@ nav {
 }
 
 
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {
 .container {
     max-width: 100%;
   }
-}
+}*/
 
-@media only screen and (max-width:470px) {
+@media only screen and (max-width: 470px) {
   .container {
     max-width: 100%;
   }
@@ -240,7 +234,6 @@ h1 {
 .service {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   margin: 3rem;
   width: 5rem;
@@ -292,6 +285,7 @@ img {
   .services-container {
     flex-direction: column;
     max-width: 100%;
+    justify-content: center;
 
   }
 }
@@ -299,27 +293,26 @@ img {
 @media only screen and (max-width: 470px) {
   #contacts {
     max-width: 100%;
-
   }
 }
 
-@media only screen and (max-width: 470px) {
-  .contact {
-    max-width: 100%;
-
-  }
-}
 
 @media only screen and (max-width: 470px) {
   .values {
     max-width: 100%;
-
+    margin-bottom: 4rem;
   }
 }
 
-@media only screen and (max-width: 470px) {
+/*@media only screen and (max-width: 470px) {
   .info {
-    max-width: 100%;
+    max-width: auto;
+  }
+}*/
+
+@media only screen and (max-width: 470px) {
+  .services-container .info {
+    width: 100%;
   }
 }
 
@@ -332,9 +325,17 @@ img {
   max-width: 10rem;
   padding: 0.5rem 1.25rem;
   color: white;
+  display: flex;
 }
 
-
+@media only screen and (max-width: 470px) {
+  .contact {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: orange;
+  }
+}
 
 .info p {
   padding: 1rem 0;
