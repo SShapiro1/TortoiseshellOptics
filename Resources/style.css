@@ -50,6 +50,7 @@ nav {
   justify-content: space-between;
 }
 
+
 @media only screen and (max-width: 470px) {
   nav a {
     display: none;
@@ -108,6 +109,11 @@ nav img {
   height: 1.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav div {
   display: flex;
   align-items: center;
 }
@@ -272,7 +278,7 @@ img {
 /* End Services Images */
 /* Begin Philosophy & Contact Info */
 
-#contacts /*.services-container*/ {
+#contacts .services-container {
   display: flex;
   justify-content: center;
 }
@@ -283,9 +289,11 @@ img {
   max-width: 100%;
 }
 
+@media only screen and (min-width: 470px) {
 .values {
   width: 35%;
   margin: 5%;
+}
 }
 
 @media only screen and (max-width: 470px) {
