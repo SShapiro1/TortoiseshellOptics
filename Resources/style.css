@@ -29,7 +29,6 @@ header {
     height: 22rem;
     max-width: 100%;
     background-size: cover;
-  }
 }
 
 @media only screen and (max-width:470px) {
@@ -74,16 +73,15 @@ nav {
 
 
 @media only screen and (max-width: 470px) {
-  .items {
-    display: flex;
-    width: 100%;
+  nav .items {
+    max-width: 100%;
   }
 }
 
 
 
 @media only screen and (max-width: 470px) {
-  .mobile-nav {
+  nav .mobile-nav {
     display: block;
     text-align: right;
   }
@@ -294,24 +292,28 @@ img {
   .services-container {
     flex-direction: column;
     max-width: 100%;
+
   }
 }
 
 @media only screen and (max-width: 470px) {
   #contacts {
     max-width: 100%;
+
   }
 }
 
 @media only screen and (max-width: 470px) {
   .contact {
     max-width: 100%;
+
   }
 }
 
 @media only screen and (max-width: 470px) {
   .values {
     max-width: 100%;
+
   }
 }
 
@@ -350,9 +352,28 @@ footer {
   padding: 4rem 2rem;
 }
 
+
+@media only screen and (max-width:470px) {
+  footer {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  footer .title {
+    display: none;
+  }
+}
+@media only screen and (max-width:470px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .footer img {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
 }
+
 /* End Footer */
